@@ -10,7 +10,7 @@ public class NormalVsCriticalCode {
 		// int c = (a + b) / 0; // Critical Code -> immediately program crashes at this
 		// line & execution stops
 
-		int c;
+		int c = 0;
 
 		try {
 
@@ -19,6 +19,8 @@ public class NormalVsCriticalCode {
 		} catch (Exception e) {
 			System.out.println(e); // does not stops execution
 		}
+
+		System.out.println("The value of c is: " + c);
 
 		System.out.println("Bye"); // runs
 
