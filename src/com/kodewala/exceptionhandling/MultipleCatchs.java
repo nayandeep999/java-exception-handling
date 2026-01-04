@@ -40,7 +40,7 @@ public class MultipleCatchs {
 			c = 10 / 10;
 			System.out.println(arr[5]);
 		} catch (Exception e) { -> YOU CANT DO THIS BECAUSE COMPILER CHECKS IF EXCEPTIONS MATCHES THIS EXCEPTION
-			THEN IT DOES NOT CHECK ANY OTHER CATCH BLOCKS
+			THEN IT DOES NOT CHECK ANY OTHER CATCH BLOCKS BECAUSE IT HAPPENS DURING RUNTIME (TOP TO BOTTOM EXECUTION)
 			System.out.println(e.getMessage());
 		} catch (ArithmeticException | ArrayIndexOutOfBoundsException e) { // Collapsing catch exceptions
 			System.out.println(e.getMessage());
