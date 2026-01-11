@@ -4,9 +4,9 @@ public class Register {
 
 	String email = "java";
 
-	public void register(String _email) throws UserAlreadyExists {
+	public void register(String _email) throws UserAlreadyExistsException {
 		if (email.equals(_email)) {
-			throw new UserAlreadyExists("User already exists");
+			throw new UserAlreadyExistsException("User already exists");
 		} else {
 			System.out.println("Registration succesful");
 		}

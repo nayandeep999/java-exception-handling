@@ -6,7 +6,7 @@ public class Driver {
 		Register r = new Register();
 		try {
 			r.register("java");
-		} catch (UserAlreadyExists e) {
+		} catch (UserAlreadyExistsException e) {
 			e.printStackTrace();
 		}
 
